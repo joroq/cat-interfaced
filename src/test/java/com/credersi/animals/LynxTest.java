@@ -5,23 +5,23 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class CatTest {
+public class LynxTest {
 	@Test
 	public void testInitialState() {
-		Cat cat = new Cat();
-		assertTrue(cat.isAlive());
-		assertEquals(cat.howHungry(), 50);
+		Lynx lynx = new Lynx();
+		assertTrue(lynx.isAlive());
+		assertEquals(lynx.howHungry(), 50);
 	}
 	
 	@Test
 	public void testPurrs() {
-		Cat cat = new Cat();
-		assertEquals(cat.purr(), 25);
+		Lynx lynx = new Lynx();
+		assertEquals(lynx.purr(), 30);
 	}
 	
 	@Test
 	public void testHunt() {
-		Cat cat = new Cat();
-		assertEquals(cat.hunt(), "Hunted a gift for my human");
+		Lynx lynx = new Lynx();
+		assertEquals(lynx.hunt(), "Hunted and fed");
 	}
 }
